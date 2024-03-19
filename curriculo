@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>aula 6 sop</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+           <h1>Aula HTML</h1>
+        </header>
+        </main>
+         
+         <h1>Nome: </h1><h2>Justo Willian</h2>
+         <hr><p></p>
+
+        </main>
+    </body>  
+ </html>
