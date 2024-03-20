@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+    
+    char nome[50];
+    float salario, percentual, novo_salario;
+    
+    //solicitar a entrada do nome da pessoa
+    printf("digite o nome da pessoa: ");
+    scanf("%s", nome);
+    
+    //solicitar a enrtrada do salario
+    printf("digite o salario da pessoa: R$");
+    scanf("%f", &salario);
+    
+    //solicitar o valor do percentual
+    printf("digite o valor do percentual: ");
+    scanf("%f", &percentual);
+    
+    novo_salario = salario *(1+percentual/100);
+    
+    //exibir nome da pessoa e o salario
+    printf("novo salario de %s: R$%.2f\n", nome, novo_salario);
+    
+    return 0;
+}
