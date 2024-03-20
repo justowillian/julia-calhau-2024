@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    setlocale(LC_ALL,"");
+    float velocidade, distancia, tempo;
+    
+    printf("digite a velocidade do carro");
+    scanf("%f", &velocidade);
+    
+    printf("digite a distancia a ser percorrida em KM: ");
+    scanf("%f", &distancia);
+    
+    tempo = distancia / velocidade;
+    
+    printf("o tempo necessario para percorrer %.2f km %.2f horas/n", distancia, tempo);
+    
+    return 0;
+}
