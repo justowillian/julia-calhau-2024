@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int contador = 1;
+    
+             while(contador < 51)
+             {
+             printf("numero: %d\n", contador);
+             contador += 1;
+             }
+             printf("acabou!\n");
+              return 0;
+}
