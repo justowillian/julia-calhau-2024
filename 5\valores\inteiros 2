@@ -1,0 +1,40 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    const int TAMANHO = 5; 
+    vector<int> valores(TAMANHO); 
+    int soma = 0; 
+
+    cout << "Digite 5 valores inteiros:\n";
+
+    for (int i = 0; i < TAMANHO; ++i) {
+        cout << "Valor " << i + 1 << ": ";
+        cin >> valores[i];
+        soma += valores[i];
+    }
+
+
+    double media = static_cast<double>(soma) / TAMANHO;
+
+    cout << "A média dos valores é: " << media << endl;
+
+    cout << "Valores maiores que a média: ";
+    for (int i = 0; i < TAMANHO; ++i) {
+        if (valores[i] > media) {
+            cout << valores[i] << " ";
+        }
+    }
+    cout << endl;
+
+    cout << "Valores menores que a média: ";
+    for (int i = 0; i < TAMANHO; ++i) {
+        if (valores[i] < media) {
+            cout << valores[i] << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
