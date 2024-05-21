@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int num[20], cont;
+
+   for(cont=0 ; cont<20 ; cont++)
+       num[cont] = cont+1;
+
+   for(cont=0 ; cont<20 ; cont++)
+       cout << "matriz " << cont+1 << ": " << num[cont] << endl;
+}
